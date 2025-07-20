@@ -507,3 +507,37 @@ body {
     font-size: 0.95em;
   }
 }
+
+/* Add to dental-record-detail.css */
+
+/* ... existing styles ... */
+
+/* --- NEW STYLES for X-ray Image Display --- */
+.xray-image-section {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+}
+
+.xray-image-section h3 {
+  color: var(--primary-color);
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+}
+
+.xray-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+  border: 2px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.xray-image:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
